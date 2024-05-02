@@ -2,14 +2,18 @@ import java.util.Scanner;
 
 public class MainSuma{
         public static void main(String[] args) {
-        Scanner n1 = new Scanner(System.in);
+        Scanner num = new Scanner(System.in);
+        Suma n1 = new Suma();
      System.out.println("Ingresa un numero");
-        int a=n1.nextInt();
+        n1.setA(num.nextInt());
         System.out.println("Ingrese el segundo numero");
-        int b=n1.nextInt();
-        int r=a+b;
-        System.out.println("El resultado es:"+r);
+        n1.setB(num.nextInt());
+        System.out.println("El resultado es:");
+        System.out.println(n1.sumar());
+        System.out.println(n1);
         
+        n1.getA();
+        n1.getB();
         
     }
 }
